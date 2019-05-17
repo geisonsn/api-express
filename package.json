@@ -5,6 +5,9 @@
   "license": "MIT",
   "dependencies": {
     "consign": "^0.1.6",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "pg": "^7.0.0",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^5.8.6"
   }
 }
