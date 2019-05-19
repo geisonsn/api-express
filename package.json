@@ -3,11 +3,17 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
   "dependencies": {
     "consign": "^0.1.6",
     "express": "^4.16.4",
     "pg": "^7.0.0",
     "pg-hstore": "^2.3.2",
     "sequelize": "^5.8.6"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.0"
   }
 }

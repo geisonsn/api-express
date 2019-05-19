@@ -1,21 +1,5 @@
-const Sequelize = require('sequelize');
 const sequelize = require('../config/sequelize');
-
-// class User {
-//   get() {
-//     return {id: 1, nome: 'Fulano'};
-//   }
-//   list() {
-//     return [
-//       {id: 1, nome: 'Beltrano'},
-//       {id: 2, nome: 'Fulano'},
-//       {id: 3, nome: 'Sicrano'}
-//     ];
-//   }
-// }
-
-// module.exports = new User();
-
+const Sequelize = require('sequelize');
 
 class User extends Sequelize.Model {}
 User.init({
@@ -24,3 +8,5 @@ User.init({
   username: Sequelize.STRING,
   gender: Sequelize.STRING
 }, {sequelize, modelName: 'user', freezeTableName: true});
+
+module.exports = User;
